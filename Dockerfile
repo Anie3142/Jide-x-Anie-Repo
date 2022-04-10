@@ -7,4 +7,5 @@ WORKDIR /usr/app
 EXPOSE 3000
 
 RUN npm install
+RUN npm install
 CMD ["node", "server.js"]
