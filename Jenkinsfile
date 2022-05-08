@@ -8,7 +8,6 @@ pipeline {
                 git branch: 'main', credentialsId: 'github-credentials', url: 'https://github.com/Anie3142/Jide-x-Anie-Repo.git'
                 }
             }
-        }
         stage('increment version') {
             steps {
                 script {
