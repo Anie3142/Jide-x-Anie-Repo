@@ -1,6 +1,7 @@
 pipeline {
     agent any
     tools {nodejs "node"}
+    git branch: 'main', credentialsId: 'github-credentials', url: 'https://github.com/Anie3142/Jide-x-Anie-Repo.git'
     stages {
         stage('increment version') {
             steps {
